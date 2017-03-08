@@ -58,15 +58,15 @@ I felt that my dataset had too many 0.0 angle entries. So I felt I should random
 Now I thought maybe I should preprocess more. I looked at my grayscale images and decided that I need to increase the contrast somehow because my grayscale images were not showing the dirt patch clearly enough. So I used this neat technique called *histogram equalization*. The car could now get past the bridge but then gets stuck later.
 This is what histogram equalization does:
 
-Original:
+**Original:**
 
 ![Color](imgs/dirt-rgb.jpg) 
 
-Grayscale:
+**Grayscale:**
 
 ![Gray](imgs/dirt-gray.png) 
 
-Histogram Equalized:
+**Histogram Equalized:**
 
 ![Equalized](imgs/dirt-eq.png)
 
@@ -83,6 +83,19 @@ Finally I went to the student community and requested to see their github repos 
 * Convert to HSV space, and extract only the saturation channel
 * Do a Gaussian blur to further simplify the image
 * Normalize the values
+
+**HSV Transform**
+
+![hsv](imgs/bridge-hsv.png)     ![hsv2](imgs/dirt-hsv.png) 
+
+**Extracted the Saturation Channel**
+
+![sat](imgs/bridge-sat.png)     ![sat2](imgs/dirt-sat.png) 
+
+**Blurred, Normalized and Cropped**
+
+![final1](imgs/bridge-final.png)     ![final2](imgs/dirt-final.png) 
+
 
 I also slimmed down my model to just a few layers (one convolution, maxpool, relu, dropout and a single fully connected neuron at the end). It instantly got my car to complete the track.
 And yippiee! The car completes track 1, and I can finally submit the project. It doesn't do much in Track 2, but that's a challenge for another day for now.
