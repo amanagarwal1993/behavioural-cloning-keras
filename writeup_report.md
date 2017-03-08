@@ -84,6 +84,10 @@ Finally I went to the student community and requested to see their github repos 
 * Do a Gaussian blur to further simplify the image
 * Normalize the values
 
+**Original**
+
+![org1](imgs/bridge-rgb.jpg)     ![org2](imgs/dirt-rgb.jpg) 
+
 **HSV Transform**
 
 ![hsv](imgs/bridge-hsv.png)     ![hsv2](imgs/dirt-hsv.png) 
