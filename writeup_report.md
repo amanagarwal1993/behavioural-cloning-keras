@@ -61,9 +61,11 @@ This is what histogram equalization does:
 Original:
 
 ![Color](imgs/dirt-rgb.jpg) 
+
 Grayscale:
 
 ![Gray](imgs/dirt-gray.png) 
+
 Histogram Equalized:
 
 ![Equalized](imgs/dirt-eq.png)
