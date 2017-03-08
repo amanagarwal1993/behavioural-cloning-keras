@@ -3,6 +3,7 @@ Teaching a car to make driving decisions on its own inside a simulator
 
 ### Project Structure
 Overview of the different files submitted in the project
+
 1. **`model.py`**: The primary python file which houses all the code to pre-process images, create the Keras model and train the model. You don't need to run this file.
 2. **`aws-model-final.ipynb`**: A Jupyter notebook which houses the same code as the model.py file.
 3. **`model-tiny3.h5`**: Never mind the weird name. It's the saved, trained model.
