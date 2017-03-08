@@ -59,10 +59,13 @@ Now I thought maybe I should preprocess more. I looked at my grayscale images an
 This is what histogram equalization does:
 
 Original:
+
 ![Color](imgs/dirt-rgb.jpg) 
 Grayscale:
+
 ![Gray](imgs/dirt-gray.png) 
 Histogram Equalized:
+
 ![Equalized](imgs/dirt-eq.png)
 
 ###### Approach 6
