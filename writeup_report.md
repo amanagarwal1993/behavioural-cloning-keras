@@ -55,7 +55,10 @@ Collected even more recovery data. Trained for 5 epochs. This model could get pa
 I felt that my dataset had too many 0.0 angle entries. So I felt I should randomly remove around 40% of them. I did that, and my model got even worse. At this point I felt that I have enough data, but apparently my model needed more layers (!) so I added dense layers, and did a grayscale to them before passing into the model. The car still drove off the track into the bushes.
 
 ###### Approach 5
-Now I thought maybe I should preprocess more. I looked at my grayscale images and decided that I need to increase the contrast somehow, so I learned about this neat technique called *histogram equalization*. The car could now get past the bridge but then gets stuck later.
+Now I thought maybe I should preprocess more. I looked at my grayscale images and decided that I need to increase the contrast somehow because my grayscale images were not showing the dirt patch clearly enough. So I used this neat technique called *histogram equalization*. The car could now get past the bridge but then gets stuck later.
+This is what histogram equalization does:
+
+![Color](imgs/dirt-rgb.jpg) ![Gray](imgs/dirt-gray.png) ![Equalized](imgs/dirt-eq.png)
 
 ###### Approach 6
 "Hmm, maybe I should keep the images to their full size? Who knows I might be losing valuable information!" I changed convolution layer lengths and reverted images to full size, while keeping the grayscale. Got even worse performance.
